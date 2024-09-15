@@ -1,1 +1,1 @@
-# Jankenpon
+# Rock Paper Scissors Game
