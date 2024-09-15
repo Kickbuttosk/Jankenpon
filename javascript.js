@@ -33,62 +33,65 @@ function getHumanChoice (){
 let humanscore = 0;
 let computerscore = 0;
 
-function testground(human , computer){
-  if(human === choice1 && computer === choice1){
-   console.log("Tie!!");
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-  };
-  if(human === choice1 && computer === choice2){
-  console.log("You lose! Paper beats rock!!");
-   computerscore++;
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-  
-  };
-  if(human === choice1 && computer === choice3){
-  console.log("You win!! Rock beats Scissors!!");
-   humanscore++;
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-  }; 
-   if(human === choice2 && computer === choice3){
-   console.log("You lose!! Scissors beats Paper!!");
-   computerscore++;
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-   };
-   if(human === choice2 && computer === choice2 ){
-    console.log("Tie!!");
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-   };
-   if(human === choice2 && computer === choice1){
-   console.log("You Win! Paper  beats rock!!");;
-   humanscore++;
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-   };
-   if(human === choice3 && computer === choice3 ){
-    console.log("Tie!!");
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-   };
-   if(human === choice3 && computer === choice1){
-   console.log("You lose! Rock  beats Scissors!!");
-   computerscore++;
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-   };
-   if(human === choice3 && computer === choice2){
-   console.log("You Win!! Scissors beats Paper!!");
-   humanscore++;
-   console.log("Your score" + " " +humanscore);
-   console.log( "Computer score" + " " + computerscore);
-   }
-  }
 
 
+function playgame(){
+  function testground(human , computer){
+    if(human === choice1 && computer === choice1){
+     console.log("Tie!!");
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+    };
+    if(human === choice1 && computer === choice2){
+    console.log("You lose! Paper beats rock!!");
+     computerscore++;
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+    
+    };
+    if(human === choice1 && computer === choice3){
+    console.log("You win!! Rock beats Scissors!!");
+     humanscore++;
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+    }; 
+     if(human === choice2 && computer === choice3){
+     console.log("You lose!! Scissors beats Paper!!");
+     computerscore++;
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+     };
+     if(human === choice2 && computer === choice2 ){
+      console.log("Tie!!");
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+     };
+     if(human === choice2 && computer === choice1){
+     console.log("You Win! Paper  beats rock!!");;
+     humanscore++;
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+     };
+     if(human === choice3 && computer === choice3 ){
+      console.log("Tie!!");
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+     };
+     if(human === choice3 && computer === choice1){
+     console.log("You lose! Rock  beats Scissors!!");
+     computerscore++;
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+     };
+     if(human === choice3 && computer === choice2){
+     console.log("You Win!! Scissors beats Paper!!");
+     humanscore++;
+     console.log("Your score" + " " +humanscore);
+     console.log( "Computer score" + " " + computerscore);
+     }
+    }
+    testground(getHumanChoice(),getComputerChoice())
+}
 
 
 
@@ -97,14 +100,14 @@ function testground(human , computer){
 
   
 
-testground(getHumanChoice(),getComputerChoice());
+playgame();
 console.log("                     First round     ");
-testground(getHumanChoice(),getComputerChoice());
+playgame();
 console.log("                     Second round    ");
-testground(getHumanChoice(),getComputerChoice());
+playgame();
 console.log("                     Third round     ");
-testground(getHumanChoice(),getComputerChoice());
+playgame();;
 console.log("                     Fourth round    ");
-testground(getHumanChoice(),getComputerChoice());
+playgame();;
 console.log("                     Fifth round     ");
 console.log("                     Game over!!     ");
