@@ -95,12 +95,15 @@ function playgame(){
 
 
 function whowins(){
- if(humanscore >= computerscore){
+ if(humanscore > computerscore){
  console.log("Player wins!!")
  } 
- else{
-  console.log("Computer Wins!!")
- }
+else if(humanscore === computerscore){
+ console.log("Tie")
+}
+else{
+ console.log("Computer Wins!!")
+}
 }
 
  
