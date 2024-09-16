@@ -94,12 +94,16 @@ function playgame(){
 }
 
 
-
+function whowins(){
+ if(humanscore >= computerscore){
+ console.log("Player wins!!")
+ } 
+ else{
+  console.log("Computer Wins!!")
+ }
+}
 
  
-
-  
-
 playgame();
 console.log("                     First round     ");
 playgame();
@@ -110,4 +114,5 @@ playgame();;
 console.log("                     Fourth round    ");
 playgame();;
 console.log("                     Fifth round     ");
+whowins();
 console.log("                     Game over!!     ");
